@@ -60,6 +60,7 @@ Photorealistische 3D-Polizei-Simulation im Browser mit:
 - **Grafik:** Hyper-AAA (200.000+ Polygone pro NPC)
 - **Gameplay:** 24-Stunden-Echtzeit-Event-System (24 Minuten Echtzeit = 24 Stunden Spielzeit)
 - **Hardware:** Zero-Home-PC-Footprint (94°C CPU/GPU — kritisch!)
+- **Sprache:** Das gesamte Spiel und alle Antworten der KI sind auf **DEUTSCH** (German-Only).
 
 ### ⚠️ HARDWARE-KRITIKALITÄT
 ```
@@ -219,13 +220,38 @@ KONSEQUENZ: KEINE LOKALE ENTWICKLUNG ERLAUBT
 
 ### 📋 Aktuelle Fehler (Keine)
 
-*Noch keine Fehler aufgetreten — Projekt noch nicht gestartet*
+*Noch keine Fehler aufgetreten — Phase 1 erfolgreich abgeschlossen*
 
 ---
 
 ### ✅ Behobene Fehler (Archiv)
 
-*Wird gefüllt, sobald Fehler auftreten und behoben werden*
+* [2026-03-20] **BUILD_FAILURE**: Mixed dependencies with React 19. Behoben durch `--legacy-peer-deps`.
+
+---
+
+### 🚀 [2026-03-20 00:30] Phase 1.1 - 1.4 — Projekt-Initialisierung & Setup
+
+**Was wurde gemacht:**
+- [x] Projekt-Verzeichnisstruktur erstellt (`src`, `docs`, `public/assets`)
+- [x] Expo App mit React 19, Three.js 0.170.0 und R3F initialisiert
+- [x] `package.json`, `app.json` und `tsconfig.json` (Strict Mode) konfiguriert
+- [x] Initialen Screen (`app/index.tsx`) und Layout (`app/_layout.tsx`) erstellt
+- [x] Web-Server erfolgreich gestartet und via Browser-Subagent verifiziert
+
+**Erstellte/Geänderte Dateien:**
+- `package.json`, `app.json`, `tsconfig.json`
+- `app/index.tsx`, `app/_layout.tsx`
+- `Gedächtnis.md` (Update)
+
+**Validierung:**
+- ✅ Code-Beweis (0 Errors Console)
+- ✅ Start-Beweis (Kein Black Screen)
+- ✅ Grafik-Beweis (Futuristisches Design)
+- ✅ Performance-Beweis (Cloud Rendering OK)
+
+**Status:** ✅ Abgeschlossen  
+**Nächster Schritt:** Phase 2.1 — R3F Canvas & Szene-Setup
 
 ---
 
