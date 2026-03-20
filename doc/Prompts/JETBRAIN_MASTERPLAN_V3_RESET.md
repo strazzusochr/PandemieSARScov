@@ -1,4 +1,4 @@
-# 🏆 DER ULTIMATIVE MASTERPLAN: JETBRAIN — CORONA CONTROL ULTIMATE
+# 🏆 MASTERPLAN V4: JETBRAIN — CORONA CONTROL ULTIMATE (PRO-EDITION)
 
 ## VOLLSTÄNDIG RESET: CLOUD-ONLY • ZERO HOME-PC-LAST • NEUES DEPLOYMENT
 
@@ -77,7 +77,39 @@ wurde erstellt aus den orginal Prompts:
 
 \---
 
-## 2\. TECHNIK-STACK \& ARCHITEKTUR (CLOUD-DRIVEN — ZERO HOME-PC)
+## 🚀 [AKTIV] V4 ARCHITEKTUR-STRATEGIE — PRO-EDITION (STAND: MÄRZ 2026)
+
+Dies ist die finale technische Spezifikation für JetBRAIN - Corona Control Ultimate.
+
+### 1. Programmiersprachen (Priorität fest vorgegeben)
+1.  **TypeScript**: Gesamte Frontend- und Game-Logik sowie Node.js Backend.
+2.  **GLSL**: Shader, Rendering-Effekte (WebGL2 Basis).
+3.  **Python 3.11+**: KI-Systeme, Modelle, Datenverarbeitung.
+
+### 2. Technischer Verpflichtender Stack
+*   **Frontend**: React (Latest Stable), React Three Fiber, Three.js (WebGL2), Zustand.
+*   **3D-Rendering**: PBR-Workflow, GLTF/Draco, KTX2, Custom Shader (GLSL), Post-Processing (EffectComposer), mehrstufiges LOD-System.
+*   **Backend**: Node.js (TS, LTS), WebSockets (Echtzeit-Fokus), Python **FastAPI** (für KI-Services).
+*   **KI-System**: Python + **PyTorch**, serverseitige Inferenz, ONNX Runtime Optimierung.
+*   **Daten**: **LanceDB** (Vektor-DB), PostgreSQL.
+*   **Deployment**: Vercel (FE), Railway/Docker (BE), GPU-Instanzen (AI, z.B. HuggingFace).
+
+### 3. Systemarchitektur & Datenfluss
+*   **Frontend**: Rendering Engine + UI-Layer (React).
+*   **Game-Logic Layer**: Zustand States + TS Logic.
+*   **Backend API**: Node.js Orchestration.
+*   **KI-Service**: Autonomes Python-Modul via FastAPI.
+*   **Kommunikation**: Bidirektionale WebSockets für minimale Latenz.
+
+### 4. Performance-Strategien
+*   **LOD**: Mehrstufige Level-of-Detail Skalierung.
+*   **Asset-Kompression**: Draco + KTX2 für schnelles Streaming.
+*   **GPU-Auslastung**: Verlagerung komplexer Berechnungen in Shader.
+*   **Netzwerk**: Intelligente Verteilung zwischen Client und Server.
+
+---
+
+## 2. TECHNIK-STACK & ARCHITEKTUR (LEGACY - ARCHIVIERT)
 
 ### 2.1 HARDWARE-PHILOSOPHIE: ZERO HOME-PC FOOTPRINT
 
@@ -101,21 +133,22 @@ wurde erstellt aus den orginal Prompts:
 ╚═══════════════════════════╧══════════════════════════════════════════════╝
 ```
 
-### 2.2 CORE TECHNOLOGY STACK
+### 2.2 CORE TECHNOLOGY STACK (PIVOT V3.1 - AKTIV)
 
-**Vorgabe (vom Benutzer):**
+**Vite + WebGPU Modernization:**
 
-* **Framework:** React Native (via Expo) — Cross-Platform (Web, Android, iOS)
-* **UI-Bibliothek:** React 19.0.0 (Latest Stable)
-* **3D-Rendering:** React Three Fiber (R3F) + Three.js
-* **Navigation:** Expo Router
+* **Framework:** **Vite 4+** (Modern Web Build System)
+* **UI-Bibliothek:** **React 19.0.0** (Latest Stable)
+* **3D-Rendering:** **React Three Fiber (Canary)** + **Three.js 0.170.0+**
+* **Grafik-Backend:** **WebGPURenderer** (Hardware-beschleunigt)
+* **Laufzeit:** **Node.js 24.13.1+**
+* **Erweiterungen:** Python (Automation), Java (Backend-Support)
 
-**Erweitert:**
+**Archiviert (Legacy Phase 1.0):**
+* Framework: React Native (via Expo) — *Abgeschlossen/Ersetzt*
+* Navigation: Expo Router — *Abgeschlossen/Ersetzt*
 
-* **TypeScript:** 5.7+ (Strict Mode, Zero-Tolerance für `any`)
-* **Three.js Version:** 0.170.0 (Fixed für Stabilität)
-* **State Management:** Zustand 5.0+ (mit Cloud-Sync)
-* **3D-Rendering-Pipeline:**
+### 2.3 CORE TECHNOLOGY STACK (PROPERTIES)
 
 &#x20;   ```typescript
     WebGPU (Primär) → WebGL 2.0 (Fallback) → Canvas2D (Emergency)
@@ -135,7 +168,7 @@ wurde erstellt aus den orginal Prompts:
 
 |Platform|Funktion|Status|URL|
 |-|-|-|-|
-|**GitHub**|Primary Repository \& Code Hosting|🔄 In Einrichtung|`https://github.com/strazzusochr/PandemieSARScov.git`|
+|**GitHub**|Primary Repository & Code Hosting|✅ AKTIV|`https://github.com/strazzusochr/CoronaProjektschonwieder.git`|
 
 #### 2.3.3 Deployment-Strategie (Zu Definieren)
 
@@ -613,11 +646,27 @@ docs/
 
 ## 6\. ROADMAP ZUR UMSETZUNG (PHASEN-PLAN)
 
-### Phase 1: Cloud-Setup \& Projekt-Initialisierung
+### Phase 1: Cloud-Setup & Vite WebGPU Pivot
 
 **Zeitrahmen:** Woche 1
-**Gewicht:** 15% des Gesamtprojekts
-**Status:** \[ ] Nicht gestartet
+**Status:** 🔄 AKTIV (Vite Konfiguration)
+
+#### 1.1 Vite Project Setup (V3.1)
+
+```bash
+# In CodeAnywhere Terminal
+npm create vite@latest ./ --template react-ts
+npm install
+npm install three @react-three/fiber@canary @react-three/drei@canary zustand
+```
+
+#### 1.2 WebGPU Configuration
+
+Die `vite.config.ts` muss für WebGPU optimiert werden, um den `Three.js` WebGPURenderer zu unterstützen.
+
+---
+
+### Phase 1: Expo/React Native Setup (Legacy - ARCHIVIERT)
 
 #### 1.1 CodeAnywhere Cloud IDE Setup
 

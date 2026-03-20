@@ -52,7 +52,7 @@
 
 **Projektname:** JetBRAIN — Pandemic SARS-CoV (Neue Iteration)  
 **Vollständiger Name:** Corona Control Ultimate — 3D Web Game  
-**Technologie-Stack:** React Native (Expo) + React 19 + React Three Fiber + Three.js 0.170.0 + Expo Router
+**Technologie-Stack:** Vite 4+ + React 19 + React Three Fiber + Three.js 0.170.0 (WebGPURenderer) + Zustand 5.0
 
 ### 🎯 PROJEKT-ZIEL
 Photorealistische 3D-Polizei-Simulation im Browser mit:
@@ -92,11 +92,14 @@ KONSEQUENZ: KEINE LOKALE ENTWICKLUNG ERLAUBT
 | **Features** | • Remote VS Code<br>• Node.js 20+ Runtime<br>• Cloud GPU/CPU<br>• Integriertes Terminal<br>• Live-Preview | N/A | 🟢 Aktiv |
 | **Browser-Zugriff** | Nur Browser-Tab auf Home-PC | Brave Nightly | 🟢 Erlaubt |
 
+> [!CAUTION]
+> **ABSOLUTES LOCALHOST-VERBOT:** Jede Form von lokalem Rendering oder Server-Start auf dem Home-PC ist verboten (Hitzetod-Gefahr 94°C!). Nur die Cloud-Vorschau-URL nutzen!
+
 ### Git Repository
 
 | Platform | Funktion | URL | Status |
 |----------|----------|-----|--------|
-| **GitHub** | Primary Code Repository | `https://github.com/strazzusochr/PandemieSARScov.git` | 🟡 In Setup |
+| **GitHub** | Primary Code Repository | `https://github.com/strazzusochr/CoronaProjektschonwieder.git` | 🟢 Synced (Main) |
 
 ### Deployment (Noch zu definieren)
 
@@ -235,6 +238,17 @@ KONSEQUENZ: KEINE LOKALE ENTWICKLUNG ERLAUBT
 **Was wurde gemacht:**
 - [x] Projekt-Verzeichnisstruktur erstellt (`src`, `docs`, `public/assets`)
 - [x] Expo App mit React 19, Three.js 0.170.0 und R3F initialisiert
+## 🛑 [2026-03-20 01:30] V4 PRO-ARCHITEKTUR DEFINIERT — FINALER STACK
+
+**DIREKTIVE:** Absolute Konzentration auf **TypeScript**, **Python** und **GLSL**.
+**TECHNIK:** Vite + React + R3F + Three.js + Zustand + FastAPI (Python) + LanceDB (Vector-DB) + WebSockets.
+
+**Was wurde gemacht:**
+- [x] Präzisierung der Architektur im Masterplan (PBR, KTX2, Draco, LOD).
+- [x] Festlegung auf FastAPI für KI und Node.js (TS) für Orchestrierung.
+- [x] Vorbereitung des Workspace-Setups basierend auf diesen Spezifikationen.
+
+**Status:** 🔄 Start der Phase 1 (Projektstruktur-Initialisierung)
 - [x] `package.json`, `app.json` und `tsconfig.json` (Strict Mode) konfiguriert
 - [x] Initialen Screen (`app/index.tsx`) und Layout (`app/_layout.tsx`) erstellt
 - [x] Web-Server erfolgreich gestartet und via Browser-Subagent verifiziert
@@ -250,8 +264,16 @@ KONSEQUENZ: KEINE LOKALE ENTWICKLUNG ERLAUBT
 - ✅ Grafik-Beweis (Futuristisches Design)
 - ✅ Performance-Beweis (Cloud Rendering OK)
 
-**Status:** ✅ Abgeschlossen  
-**Nächster Schritt:** Phase 2.1 — R3F Canvas & Szene-Setup
+### 🚀 [2026-03-20 00:45] Phase 0.1 — Tech-Stack Pivot (Vite + WebGPU)
+
+**Was wurde gemacht:**
+- [x] Entscheidung: Wechsel von Expo/Metro zu **Vite** für bessere WebGPU-Unterstützung
+- [x] Ziel: Volle Nutzung des **Three.js WebGPURenderer** (Phase 2+)
+- [x] Vorbereitung: Node v24.13.1 verifiziert
+- [x] Update: `Gedächtnis.md` und `implementation_plan.md` angepasst
+
+**Status:** 🔄 In Arbeit (Vite Initialisierung folgt)
+**Nächster Schritt:** Phase 1.1 — Vite Project Setup & Dependency Migration
 
 ---
 
