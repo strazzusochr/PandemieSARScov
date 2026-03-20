@@ -238,17 +238,20 @@ KONSEQUENZ: KEINE LOKALE ENTWICKLUNG ERLAUBT
 **Was wurde gemacht:**
 - [x] Projekt-Verzeichnisstruktur erstellt (`src`, `docs`, `public/assets`)
 - [x] Expo App mit React 19, Three.js 0.170.0 und R3F initialisiert
-## 🛑 [2026-03-20 01:30] V4 PRO-ARCHITEKTUR DEFINIERT — FINALER STACK
+## 🛑 [2026-03-20 01:45] !!! STRENGE DIREKTIVE: LOCALHOST IST VERBOTEN !!!
 
-**DIREKTIVE:** Absolute Konzentration auf **TypeScript**, **Python** und **GLSL**.
-**TECHNIK:** Vite + React + R3F + Three.js + Zustand + FastAPI (Python) + LanceDB (Vector-DB) + WebSockets.
+**GRUND:** Schutz der Hardware (User-PC). Das gesamte Projekt darf **NUR** in der Cloud (Codeanywhere) laufen.
+**UMSETZUNG:** 
+- Alle Web-Server MÜSSEN auf `0.0.0.0` hosten.
+- Die Cloud-GPU/CPU von Codeanywhere ist die einzige erlaubte Rechenressource.
+- Lokale Tests auf dem PC des Users sind **STRENGSTENS UNTERSAGT**.
 
 **Was wurde gemacht:**
-- [x] Präzisierung der Architektur im Masterplan (PBR, KTX2, Draco, LOD).
-- [x] Festlegung auf FastAPI für KI und Node.js (TS) für Orchestrierung.
-- [x] Vorbereitung des Workspace-Setups basierend auf diesen Spezifikationen.
+- [x] Alle lokalen Node/Python Prozesse zwangsbeendet.
+- [x] "LOCALHOST VERBOTEN" Warnung in Masterplan & Protokoll integriert.
+- [x] Konfiguration auf Cloud-Hosting (`--host 0.0.0.0`) fixiert.
 
-**Status:** 🔄 Start der Phase 1 (Projektstruktur-Initialisierung)
+**Status:** 🚦 Cloud-Only Modus (Sicherheits-Status: GRÜN)
 - [x] `package.json`, `app.json` und `tsconfig.json` (Strict Mode) konfiguriert
 - [x] Initialen Screen (`app/index.tsx`) und Layout (`app/_layout.tsx`) erstellt
 - [x] Web-Server erfolgreich gestartet und via Browser-Subagent verifiziert

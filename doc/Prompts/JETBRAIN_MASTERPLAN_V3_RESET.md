@@ -79,6 +79,10 @@ wurde erstellt aus den orginal Prompts:
 
 ## 🚀 [AKTIV] V4 ARCHITEKTUR-STRATEGIE — PRO-EDITION (STAND: MÄRZ 2026)
 
+> [!CAUTION]
+> **!!! WICHTIG: LOCALHOST IST VERBOTEN — ABSOLUTE CLOUD-ONLY DIREKTIVE !!!**
+> Jegliche Ausführung auf lokaler Hardware ist untersagt, um Überhitzung zu vermeiden. Das Projekt läuft ausschließlich auf der Cloud-Infrastruktur von Codeanywhere unter Nutzung der dortigen GPU/CPU-Ressourcen.
+
 Dies ist die finale technische Spezifikation für JetBRAIN - Corona Control Ultimate.
 
 ### 1. Programmiersprachen (Priorität fest vorgegeben)
