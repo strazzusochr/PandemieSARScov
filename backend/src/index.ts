@@ -25,7 +25,7 @@ io.on('connection', (socket) => {
       console.log('--- AI ENGINE RESPONSE:', response.data.suggested_action);
       socket.emit('ai_action_received', response.data);
       console.log('--- SENT TO CLIENT:', socket.id);
-    } catch (error) {
+    } catch (error: any) {
       console.error('--- AI ERROR:', error.message);
       socket.emit('ai_error', { message: 'AI Engine unreachable' });
     }
